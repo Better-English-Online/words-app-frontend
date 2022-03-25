@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <NavLink to={"/"}>Home</NavLink>
-            <NavLink to={"/dict"}>Dictionary</NavLink>
+            <NavLink to={"/folders"}>Dictionary</NavLink>
         </div>
     );
 }
