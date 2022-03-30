@@ -1,0 +1,32 @@
+.folder-item{
+    height: 100%;
+    width: 100%;
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition-property: background, box-shadow ;
+    transition-duration: 0.4s, 1s;
+    box-shadow: 0 0 5px black;
+    position: relative;
+
+}
+
+.folder-item:hover{
+    background: rgb(0, 255, 179);
+    box-shadow: 0 0 10px rgb(0, 255, 179);
+}
+
+.folder-item:hover *{
+    color: black;
+}
+
+.type-id{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.8rem;
+}
