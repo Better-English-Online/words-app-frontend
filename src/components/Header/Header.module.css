@@ -1,4 +1,6 @@
 .header {
-    background: #1f1f1f;
+    background: #333333;
     grid-area: header;
+    box-shadow: 0 0 5px black;
+    z-index: 2;
 }

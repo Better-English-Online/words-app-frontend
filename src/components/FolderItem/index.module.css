@@ -1,7 +1,7 @@
 .folder-item{
     height: 100%;
     width: 100%;
-    background: #1f1f1f;
+    background: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,6 @@
     font-size: 1.5rem;
     transition-property: background, box-shadow ;
     transition-duration: 0.4s, 1s;
-    box-shadow: 0 0 5px black;
     position: relative;
 
 }
