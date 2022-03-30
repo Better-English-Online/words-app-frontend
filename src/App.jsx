@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound/index';
 
 function App() {
     return (
-        <BrowserRouter basename="/my-react-app">
+        <BrowserRouter basename="/words-app-frontend">
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/folders/:id" element={<Folder />}></Route>
