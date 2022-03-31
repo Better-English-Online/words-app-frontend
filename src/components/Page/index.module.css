@@ -1,10 +1,29 @@
 .page{
     display: grid;
-    grid-template-rows: 80px 1fr 200px;
+    grid-template-rows: 60px 1fr 200px;
+    grid-template-columns: 1fr;
     height: 100vh;
     grid-template-areas: 
         'header'
         'main'
         'footer'
     ;
+}
+
+@media screen and (max-width: 750px){
+    .page{
+        grid-template-rows: 1fr 60px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'main'
+        'header'
+    ;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    .page{
+        grid-template-columns: 1fr 80px;
+        grid-template-areas: 'main header'
+    }
 }

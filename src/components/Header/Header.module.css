@@ -1,6 +1,29 @@
 .header {
-    background: #333333;
+    background: rgba(60, 60, 60, 0.7) ;
     grid-area: header;
+    position: sticky;
+    top: 0;
     box-shadow: 0 0 5px black;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 750px){
+    .header{
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    .header{
+        flex-direction: column;
+        right: 0;
+        height: 100%;
+        position: fixed;
+        width: 80px;
+    }
 }

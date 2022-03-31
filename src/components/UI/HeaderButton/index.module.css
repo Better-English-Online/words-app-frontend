@@ -1,0 +1,13 @@
+.header-btn{
+    padding: 8px 10px;
+    border: 1px white solid;
+    border-radius: 13px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.header-btn:hover{
+    color: black;
+    background: white;
+}

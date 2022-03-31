@@ -17,7 +17,7 @@
 
 .set-item:hover{
     background: rgb(255, 230, 0);
-    box-shadow: 0 0 10px rgb(255, 230, 0);
+    box-shadow: 0 0 15px rgb(255, 230, 0);
 }
 
 .set-item:hover *{

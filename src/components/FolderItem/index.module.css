@@ -16,7 +16,7 @@
 
 .folder-item:hover{
     background: rgb(0, 255, 179);
-    box-shadow: 0 0 10px rgb(0, 255, 179);
+    box-shadow: 0 0 15px rgb(0, 255, 179);
 }
 
 .folder-item:hover *{
