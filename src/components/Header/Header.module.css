@@ -7,23 +7,28 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     overflow: hidden;
 }
 
+.header-ico{
+    fill: rgb(159, 159, 159);
+    height: 35px;
+}
 
-@media screen and (max-width: 750px){
+
+@media screen and (max-width: 600px){
     .header{
         bottom: 0;
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
     .header{
         flex-direction: column;
         right: 0;
         height: 100%;
         position: fixed;
-        width: 80px;
+        width: 60px;
     }
 }
