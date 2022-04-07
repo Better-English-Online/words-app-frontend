@@ -1,0 +1,35 @@
+.submit-btn{
+    background: rgb(255, 230, 0);
+    border: none;
+    padding: 15px 13px;
+    width: 90%;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn span{
+    z-index: 2;
+    position: relative;
+    color: black;
+    letter-spacing: 2px;
+}
+.submit-btn:before{
+    content: "";
+    background: rgb(0, 255, 179);
+    display: block;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease;
+    box-shadow: -5px -10px 20px 2px rgb(0, 90, 19) inset;
+}
+
+.submit-btn:hover:before{
+    width: 100%;
+}

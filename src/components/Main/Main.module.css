@@ -1,4 +1,11 @@
 .main {
     grid-area: main;
-    padding: 20px;
+    padding: 30px;
 }
+
+@media screen and (max-width: 600px){
+    .main{
+        padding: 10px;
+    }
+}
+

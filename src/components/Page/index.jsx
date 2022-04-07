@@ -2,12 +2,14 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 import styles from './index.module.css'
-import {useEffect} from 'react'
-const Page = ({children}) => {
+
+
+const Page = ({children, mainStyle}) => {
+    console.log(mainStyle)
     return (
         <div className={styles.page}>
             <Header />
-            <Main>
+            <Main style={mainStyle} className="main">
                 {children}
             </Main>
             <Footer />

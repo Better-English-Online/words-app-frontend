@@ -24,6 +24,7 @@
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .page{
         grid-template-columns: 1fr 60px;
+        grid-template-rows: 1fr;
         grid-template-areas: 'main header'
     }
 }

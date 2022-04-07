@@ -1,10 +1,11 @@
 import styles from './Main.module.css'
 
 
-const Main = ({children}) => {
-    return <div className={styles.main}>
+const Main = ({children, style}) => {
+    console.log(style)
+    return <div style={style} className={styles.main}>
         {children}
     </div>;
 };
 
-export default Main;
+export default Main
