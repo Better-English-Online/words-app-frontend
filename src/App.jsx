@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Folder from "./pages/Folder/Folder";
-import './App.module.css'
+import './App.css'
 import Set from './pages/Set/Set';
 import NotFound from './pages/NotFound/index';
 
