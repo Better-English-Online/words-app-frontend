@@ -5,6 +5,9 @@
     box-shadow: 0 0 3px black;
     padding: 30px 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -14,6 +17,7 @@
     align-items: center;
     justify-content: space-between;
     height: 90%;
+    width: 90%;
 }
 
 @media screen and (max-width: 1000px){
@@ -26,5 +30,9 @@
 .form-title{
     font-size: 1.5rem;
     letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.inputs > *{
     margin-bottom: 20px;
 }
