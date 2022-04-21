@@ -10,7 +10,7 @@ const AuthForm = () => {
             <h2 className={styles["form-title"]}>Log-in</h2>
             <form className={styles.AuthForm} action="get">
                 <div className={styles.inputs} style={{ width: "100%" }}>
-                    <Input type="text" placeholder="Mail..." name="mail" />
+                    <Input type="text" placeholder="Email..." name="email" />
                     <PasswordInput/>
                 </div>
                 <SubmitButton

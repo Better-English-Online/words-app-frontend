@@ -30,9 +30,9 @@ const PasswordInput = () => {
                 fill="none"
                 onClick={toggleShowPassword}
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 style={showPasswordIcoStyle}
             >
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -45,10 +45,9 @@ const PasswordInput = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-eye-off"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     style={showPasswordIcoStyle}
                     onClick={toggleShowPassword}
                 >
@@ -61,7 +60,7 @@ const PasswordInput = () => {
 
 
     return (
-        <div class={styles.container}>
+        <div className={styles.container}>
             <input
                 className={styles.passInput}
                 type={setPasswordInputType()}

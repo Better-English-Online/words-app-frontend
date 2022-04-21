@@ -5,7 +5,6 @@ import styles from './index.module.css'
 
 
 const Page = ({children, mainStyle}) => {
-    console.log(mainStyle)
     return (
         <div className={styles.page}>
             <Header />
