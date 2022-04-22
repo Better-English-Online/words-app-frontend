@@ -3,11 +3,14 @@ import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 import styles from './index.module.css'
 
-const Page = ({children}) => {
+
+const Page = ({children, mainStyle}) => {
     return (
         <div className={styles.page}>
-            <Header/>
-            <Main>{children} </Main>
+            <Header />
+            <Main style={mainStyle} className="main">
+                {children}
+            </Main>
             <Footer />
         </div>
     );

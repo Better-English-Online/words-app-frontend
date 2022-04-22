@@ -14,7 +14,7 @@ const Set = () => {
     }
     return (
         <Page>
-                <h1>{set.title}</h1>
+            <h1 style={{ fontSize: "2.5rem" }}>{set.title}</h1>
         </Page>
     );
 };

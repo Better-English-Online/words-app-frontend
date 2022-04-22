@@ -10,9 +10,9 @@
     ;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 600px){
     .page{
-        grid-template-rows: 1fr 60px;
+        grid-template-rows: 1fr 50px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         'main'
@@ -21,9 +21,10 @@
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
     .page{
-        grid-template-columns: 1fr 80px;
+        grid-template-columns: 1fr 60px;
+        grid-template-rows: 1fr;
         grid-template-areas: 'main header'
     }
 }
