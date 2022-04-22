@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/words-app-frontend/static/css/main.67ce7ddc.css",
-    "main.js": "/words-app-frontend/static/js/main.ceddaa52.js",
+    "main.css": "/words-app-frontend/static/css/main.09ca41e4.css",
+    "main.js": "/words-app-frontend/static/js/main.f3d1e014.js",
     "index.html": "/words-app-frontend/index.html",
-    "main.67ce7ddc.css.map": "/words-app-frontend/static/css/main.67ce7ddc.css.map",
-    "main.ceddaa52.js.map": "/words-app-frontend/static/js/main.ceddaa52.js.map"
+    "main.09ca41e4.css.map": "/words-app-frontend/static/css/main.09ca41e4.css.map",
+    "main.f3d1e014.js.map": "/words-app-frontend/static/js/main.f3d1e014.js.map"
   },
   "entrypoints": [
-    "static/css/main.67ce7ddc.css",
-    "static/js/main.ceddaa52.js"
+    "static/css/main.09ca41e4.css",
+    "static/js/main.f3d1e014.js"
   ]
 }
