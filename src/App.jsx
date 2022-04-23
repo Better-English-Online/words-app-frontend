@@ -16,7 +16,7 @@ function App() {
                 <Route path="/folders" element={<Folder />}></Route>
                 <Route path="/sets/:id" element={<Set />}></Route>
                 <Route path="/register" element={<Register />}></Route>
-                <Route path="/registration" element={<Login />}></Route>
+                <Route path="/login" element={<Login />}></Route>
                 <Route path="*" element={<NotFound />}></Route>
             </Routes>
         </BrowserRouter>

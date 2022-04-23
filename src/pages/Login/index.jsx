@@ -1,5 +1,5 @@
 import Page from '../../components/Page/index';
-import AuthForm from '../../components/AuthForm/index';
+import AuthForm from '../../components/LoginForm/index';
 
 
 const Login = () => {
