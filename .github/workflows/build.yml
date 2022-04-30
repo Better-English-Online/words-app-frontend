@@ -1,25 +1,25 @@
-name: Automatic deploy
-on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.0.0
-          cache: npm
+# name: Automatic deploy
+# on: push
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 18.0.0
+#           cache: npm
           
-      - name: Install dependencies
-        run: npm install
+#       - name: Install dependencies
+#         run: npm install
         
-      - name: Create a build
-        run: npm run build
+#       - name: Create a build
+#         run: npm run build
         
-      - name: Commit the build
-        run: |
-          git config --local user.name 'yaromir-zhuravsky'
-          git config --local user.email 'yaromir.zhuravsky@gmail.com'
-          git add docs
-          git commit -m "Automated build[bot]"
-          git push
+#       - name: Commit the build
+#         run: |
+#           git config --local user.name 'yaromir-zhuravsky'
+#           git config --local user.email 'yaromir.zhuravsky@gmail.com'
+#           git add docs
+#           git commit -m "Automated build[bot]"
+#           git push
