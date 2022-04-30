@@ -1,5 +1,4 @@
 import {useParams} from 'react-router-dom'
-import {sets} from '../../Data/Sets'
 import Page from '../../components/Page';
 import NotFound from '../NotFound';
 
@@ -8,7 +7,7 @@ import NotFound from '../NotFound';
 
 const Set = () => {
     const {id} = useParams()
-    const set = sets[id]; 
+    const set = []
     if (!set) {
         return <NotFound />;
     }

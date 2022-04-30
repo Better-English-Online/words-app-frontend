@@ -1,29 +1,31 @@
-import {NavLink} from 'react-router-dom'
-import FolderItem from '../FolderItem/index';
-import SetItem from '../SetItem/index';
-import styles from './index.module.css'
+import { Link } from "react-router-dom";
+import FolderItem from "../FolderItem/index";
+import SetItem from "../SetItem/index";
+import styles from "./index.module.css";
 
-const detectItem = (item) => {
-    if (item.type === 'folder') {
-        return (
-            <NavLink to={`/folders/${item.id}`}>
-                <FolderItem type={item.type} title={item.title}/>
-            </NavLink>
-        )
-    } else if(item.type ==='set') {
-    return (
-        <NavLink to={`/sets/${item.id}`}>
-            <SetItem  type={item.type} title={item.title}/>
-        </NavLink>
-    )}
+const setsComponents = (sets) => {
+    return sets.map((set) => (
+        <Link key={`set${set.id}`} to={`/sets/${set.id}`}>
+            <SetItem title={set.name} />
+        </Link>
+    ));
 };
 
-const FolderItems = ({items}) => {
+const foldersComponents = (folders) => {
+    return folders.map((folder) => (
+        <Link key={`folder${folder.id}`} to={`/folders/${folder.id}`}>
+            <FolderItem title={folder.name} />
+        </Link>
+    ));
+};
+
+const FolderItems = ({ sets, folders }) => {
     return (
         <div className={styles.container}>
-        {items.map(item => detectItem(item))}
+            {foldersComponents(folders)}
+            {setsComponents(sets)}
         </div>
-    )
-}
+    );
+};
 
-export default FolderItems
+export default FolderItems;
