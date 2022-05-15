@@ -10,7 +10,7 @@ const Dictionary = () => {
     const [folder, setFolder] = useState();
 
     useEffect(() => {
-        fetch(`https://words-app-backend.herokuapp.com/api/folders/${id}`, {
+        fetch(`${process.env.REACT_APP_API_HOST}/api/folders/${id}`, {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",
