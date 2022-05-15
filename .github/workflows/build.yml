@@ -1,5 +1,10 @@
 name: Automatic deploy
+
 on: push
+
+env:
+  REACT_APP_API_HOST: https://words-app-backend.herokuapp.com
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,3 +27,4 @@ jobs:
           git add --force docs
           git commit -m "Automated build[bot]"
           git push --force --set-upstream origin deploy
+          
