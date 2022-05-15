@@ -2,7 +2,6 @@
     "name": "my-quizlet",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://yaromir-zhuravsky.github.io/words-app-frontend",
     "dependencies": {
         "env-cmd": "^10.1.0",
         "react": "^18.0.0",

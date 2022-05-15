@@ -9,7 +9,7 @@ import Login from "./pages/Login/index";
 
 function App() {
     return (
-        <BrowserRouter basename="/words-app-frontend">
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/folders/:id" element={<Folder />}></Route>
