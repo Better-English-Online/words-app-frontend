@@ -4,14 +4,15 @@
     "private": true,
     "homepage": "https://yaromir-zhuravsky.github.io/words-app-frontend",
     "dependencies": {
+        "env-cmd": "^10.1.0",
         "react": "^18.0.0",
         "react-dom": "18.0.0",
         "react-router-dom": "^6.3.0",
         "react-scripts": "^5.0.1"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "BUILD_PATH=./docs react-scripts build",
+        "start": "env-cmd -f .env.development react-scripts start",
+        "build": "env.cmd -f .env.production BUILD_PATH=./docs react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",

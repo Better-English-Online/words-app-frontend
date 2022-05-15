@@ -5,14 +5,16 @@ import NotFound from "../../pages/NotFound/index";
 import { useState, useEffect } from "react";
 
 const Dictionary = () => {
-    const { id } = useParams();
-    const [folderId, setFolderId] = useState(id || "1");
+    const id = useParams().id || 1;
     const [isLoading, setLoading] = useState(true);
     const [folder, setFolder] = useState();
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/api/folders/${folderId}`, {
-            headers: { "Content-Type": "application/json" },
+        fetch(`${process.env.REACT_APP_API_URL_FOLDERS}/${id}`, {
+            headers: { 
+                "Content-Type": "application/json",
+                'Accept': 'application/json'
+            },
             cache: "no-cache",
         })
             .then((response) => {
@@ -22,9 +24,8 @@ const Dictionary = () => {
                 setFolder(data);
                 setLoading(false);
             });
-    }, [folderId]);
+    }, [id]);
 
-    if (id && folderId !== id) setFolderId(id);
 
     if (isLoading) {
         return <h1>Loading...</h1>;
