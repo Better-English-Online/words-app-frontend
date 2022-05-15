@@ -10,7 +10,7 @@ const Dictionary = () => {
     const [folder, setFolder] = useState();
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_URL_FOLDERS}/${id}`, {
+        fetch(`${process.env.REACT_APP_API_HOST}/api/folders/${id}`, {
             headers: { 
                 "Content-Type": "application/json",
                 'Accept': 'application/json'
