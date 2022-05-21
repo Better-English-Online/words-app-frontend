@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Folder from "./pages/Folder/Folder";
 import "./App.css";
@@ -11,7 +11,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />}></Route>
+                <Route exact path="/" element={<Navigate to="/home" />} />
+                <Route path="/home" element={<Home />}></Route>
                 <Route path="/folders/:id" element={<Folder />}></Route>
                 <Route path="/folders" element={<Folder />}></Route>
                 <Route path="/sets/:id" element={<Set />}></Route>

@@ -20,20 +20,33 @@ const Header = () => {
     if(width > 1000) {
     return (
         <div className={styles.header}>
-            <NavLink to={"/"}>
-                <HeaderButton text="Home" />
-            </NavLink>
-            <NavLink to={"/folders"}>
-                <HeaderButton text="Dictionary" />
-            </NavLink>
-            <NavLink to={"/login"}>
-                <HeaderButton text="Log-in" />
-            </NavLink>
+            <div>
+                <NavLink className="text-3xl mr-20" to={"/home"}>
+                    Words-App
+                </NavLink>
+
+                <nav className="inline mr-20">
+                    <NavLink to={"/"} className="mr-5 ml-5">
+                        <HeaderButton text="Home" />
+                    </NavLink>
+                    <NavLink className="mr-5 ml-5" to={"/folders"}>
+                        <HeaderButton text="Dictionary" />
+                    </NavLink>
+                    <NavLink className="mr-5 ml-5" to={"/login"}>
+                        <HeaderButton text="Log-in" />
+                    </NavLink>
+                </nav>
+
+            </div>
+
+            <button>
+                <div className="h-[45px] w-[45px] bg-white rounded-full"></div>
+            </button>
         </div>
     );
     } else {
         return (
-            <div className={styles.header}>
+            <div className={styles['m-header']}>
                 <NavLink to={"/"}>
                     <svg
                         className={styles["header-ico"]}
