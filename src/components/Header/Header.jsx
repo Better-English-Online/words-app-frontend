@@ -24,7 +24,6 @@ const Header = () => {
                 <NavLink className="text-3xl mr-20" to={"/home"}>
                     Words-App
                 </NavLink>
-
                 <nav className="inline mr-20">
                     <NavLink to={"/"} className="mr-5 ml-5">
                         <HeaderButton text="Home" />
@@ -36,7 +35,6 @@ const Header = () => {
                         <HeaderButton text="Log-in" />
                     </NavLink>
                 </nav>
-
             </div>
 
             <button>
