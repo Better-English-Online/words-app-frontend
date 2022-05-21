@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Page from "../../components/Page/index";
 import NotFound from "../../pages/NotFound/index";
 import { useState, useEffect } from "react";
+import Spinner from '../../components/UI/Spinner/index';
 
 const Dictionary = () => {
     const id = useParams().id || 1;
@@ -28,7 +29,9 @@ const Dictionary = () => {
 
 
     if (isLoading) {
-        return <h1>Loading...</h1>;
+        return <Page mainStyle={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Spinner />
+            </Page> 
     }
 
     if (!folder) {
