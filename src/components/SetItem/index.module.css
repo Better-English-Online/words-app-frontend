@@ -1,4 +1,4 @@
-.set-item{
+.set-item {
     height: 100%;
     width: 100%;
     background: #333333;
@@ -10,21 +10,20 @@
     font-size: 1.5rem;
     transition-duration: 0.4s;
     position: relative;
-    transition-property: background, box-shadow ;
+    transition-property: background, box-shadow;
     transition-duration: 0.4s, 1s;
-
 }
 
-.set-item:hover{
+.set-item:hover {
     background: rgb(255, 230, 0);
     box-shadow: 0 0 15px rgb(255, 230, 0);
 }
 
-.set-item:hover *{
+.set-item:hover * {
     color: black;
 }
 
-.type-id{
+.type-id {
     position: absolute;
     right: 10px;
     bottom: 10px;

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Page from "../../components/Page/index";
 import NotFound from "../../pages/NotFound/index";
 import { useState, useEffect } from "react";
-import Spinner from '../../components/UI/Spinner/index';
+import Spinner from "../../components/UI/Spinner/index";
 
 const Dictionary = () => {
     const id = useParams().id || 1;
@@ -27,11 +27,18 @@ const Dictionary = () => {
             });
     }, [id]);
 
-
     if (isLoading) {
-        return <Page mainStyle={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        return (
+            <Page
+                mainStyle={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}
+            >
                 <Spinner />
-            </Page> 
+            </Page>
+        );
     }
 
     if (!folder) {

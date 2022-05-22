@@ -1,9 +1,8 @@
-import styles from './index.module.css'
-import SubmitButton from '../UI/SubmitButton/index';
+import styles from "./index.module.css";
+import SubmitButton from "../UI/SubmitButton/index";
 import Input from "../UI/Input/index";
-import PasswordInput from "../UI/PasswordInput/index"
-import { NavLink } from 'react-router-dom';
-
+import PasswordInput from "../UI/PasswordInput/index";
+import { NavLink } from "react-router-dom";
 
 const LoginForm = () => {
     return (
@@ -35,6 +34,6 @@ const LoginForm = () => {
             </NavLink>
         </div>
     );
-}
+};
 
-export default LoginForm
+export default LoginForm;

@@ -1,30 +1,28 @@
-.page{
+.page {
     display: grid;
     grid-template-rows: 60px 1fr 200px;
     grid-template-columns: 1fr;
     height: 100vh;
-    grid-template-areas: 
-        'header'
-        'main'
-        'footer'
-    ;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-@media screen and (max-width: 600px){
-    .page{
+@media screen and (max-width: 600px) {
+    .page {
         grid-template-rows: 1fr 50px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        'main'
-        'header'
-    ;
+        grid-template-areas:
+            "main"
+            "header";
     }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-    .page{
+    .page {
         grid-template-columns: 1fr 60px;
         grid-template-rows: 1fr;
-        grid-template-areas: 'main header'
+        grid-template-areas: "main header";
     }
 }

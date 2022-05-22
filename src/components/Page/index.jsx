@@ -1,10 +1,9 @@
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Main from '../Main/Main';
-import styles from './index.module.css'
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import Main from "../Main/Main";
+import styles from "./index.module.css";
 
-
-const Page = ({children, mainStyle}) => {
+const Page = ({ children, mainStyle }) => {
     return (
         <div className={styles.page}>
             <Header />
@@ -14,6 +13,6 @@ const Page = ({children, mainStyle}) => {
             <Footer />
         </div>
     );
-}
+};
 
-export default Page
+export default Page;

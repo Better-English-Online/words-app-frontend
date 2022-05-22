@@ -1,4 +1,4 @@
-.header-btn{
+.header-btn {
     padding: 6px 15px;
     border: 1px white solid;
     border-radius: 13px;
@@ -6,7 +6,7 @@
     display: inline-block;
 }
 
-.header-btn:hover{
+.header-btn:hover {
     color: black;
     background: white;
 }

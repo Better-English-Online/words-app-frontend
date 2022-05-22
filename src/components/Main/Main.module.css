@@ -3,9 +3,8 @@
     padding: 30px;
 }
 
-@media screen and (max-width: 600px){
-    .main{
+@media screen and (max-width: 600px) {
+    .main {
         padding: 10px;
     }
 }
-

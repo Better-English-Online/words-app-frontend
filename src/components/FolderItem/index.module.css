@@ -1,4 +1,4 @@
-.folder-item{
+.folder-item {
     height: 100%;
     width: 100%;
     background: #333333;
@@ -8,22 +8,21 @@
     border-radius: 25px;
     color: #ffff4f;
     font-size: 1.5rem;
-    transition-property: background, box-shadow ;
+    transition-property: background, box-shadow;
     transition-duration: 0.4s, 1s;
     position: relative;
-
 }
 
-.folder-item:hover{
+.folder-item:hover {
     background: rgb(0, 255, 179);
     box-shadow: 0 0 15px rgb(0, 255, 179);
 }
 
-.folder-item:hover *{
+.folder-item:hover * {
     color: black;
 }
 
-.type-id{
+.type-id {
     position: absolute;
     right: 10px;
     bottom: 10px;

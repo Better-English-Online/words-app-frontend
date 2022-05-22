@@ -1,5 +1,6 @@
-.header, .m-header {
-    background: rgba(60, 60, 60, 0.7) ;
+.header,
+.m-header {
+    background: rgba(60, 60, 60, 0.7);
     grid-area: header;
     position: sticky;
     top: 0;
@@ -11,20 +12,19 @@
     overflow: hidden;
 }
 
-.header-ico{
+.header-ico {
     fill: rgb(159, 159, 159);
     height: 35px;
 }
 
-
-@media screen and (max-width: 600px){
-    .m-header{
+@media screen and (max-width: 600px) {
+    .m-header {
         bottom: 0;
     }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
-    .m-header{
+    .m-header {
         flex-direction: column;
         right: 0;
         position: fixed;
@@ -32,12 +32,11 @@
     }
 }
 
-
-.header{
+.header {
     justify-content: space-between;
     padding: 0 40px;
 }
 
-.m-header{
+.m-header {
     justify-content: space-around;
 }

@@ -1,4 +1,4 @@
-.passInput{
+.passInput {
     background: #1f1f1f;
     padding: 20px 50px 20px 30px;
     border-radius: 30px;
@@ -11,15 +11,15 @@
     letter-spacing: 1px;
 }
 
-.passInput:hover{
+.passInput:hover {
     box-shadow: inset 0 0 3px black, 15px 9px rgb(255, 230, 0);
 }
 
-.passInput:focus{
+.passInput:focus {
     outline: solid 2px rgb(0, 255, 179);
-    box-shadow: inset 0 0 3px black
+    box-shadow: inset 0 0 3px black;
 }
 
-.container{
+.container {
     position: relative;
 }

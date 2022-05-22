@@ -1,4 +1,4 @@
-.submit-btn{
+.submit-btn {
     background: rgb(255, 230, 0);
     border: none;
     padding: 15px 13px;
@@ -10,13 +10,13 @@
     overflow: hidden;
 }
 
-.submit-btn span{
+.submit-btn span {
     z-index: 2;
     position: relative;
     color: black;
     letter-spacing: 2px;
 }
-.submit-btn:before{
+.submit-btn:before {
     content: "";
     background: rgb(0, 255, 179);
     display: block;
@@ -29,7 +29,6 @@
     box-shadow: -5px -10px 20px 2px rgb(0, 90, 19) inset;
 }
 
-.submit-btn:hover:before{
+.submit-btn:hover:before {
     width: 100%;
 }
-

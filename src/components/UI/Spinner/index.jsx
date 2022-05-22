@@ -1,9 +1,7 @@
-import styles from './index.module.css'
+import styles from "./index.module.css";
 
 const Spinner = () => {
-    return ( 
-        <div className={styles.loader}></div>
-    ) 
-}
+    return <div className={styles.loader}></div>;
+};
 
-export default Spinner
+export default Spinner;

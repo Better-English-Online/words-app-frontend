@@ -1,5 +1,5 @@
 import Page from "../../components/Page/index";
-import RegisterForm from '../../components/RegisterForm/index';
+import RegisterForm from "../../components/RegisterForm/index";
 
 const Register = () => {
     return (

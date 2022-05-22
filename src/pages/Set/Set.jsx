@@ -1,13 +1,10 @@
 // import {useParams} from 'react-router-dom'
-import Page from '../../components/Page';
-import NotFound from '../NotFound';
-
-
-
+import Page from "../../components/Page";
+import NotFound from "../NotFound";
 
 const Set = () => {
     // const {id} = useParams()
-    const set = []
+    const set = [];
     if (!set) {
         return <NotFound />;
     }

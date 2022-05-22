@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-const SetItem = ({ title}) => {
+const SetItem = ({ title }) => {
     return (
         <div className={styles["set-item"]}>
             <h2>{title}</h2>

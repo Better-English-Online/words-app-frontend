@@ -1,4 +1,4 @@
-.container{
+.container {
     background: rgba(60, 60, 60, 0.7);
     width: 30vw;
     border-radius: 13px;
@@ -10,8 +10,7 @@
     flex-direction: column;
 }
 
-
-.AuthForm{
+.AuthForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,19 +19,18 @@
     width: 90%;
 }
 
-@media screen and (max-width: 1000px){
-    .container{
+@media screen and (max-width: 1000px) {
+    .container {
         width: 100%;
     }
 }
 
-
-.form-title{
+.form-title {
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
-.inputs > *{
+.inputs > * {
     margin-bottom: 20px;
 }
