@@ -1,5 +1,6 @@
 .container {
     background: rgba(60, 60, 60, 0.7);
+    height: min-content;
     width: 30vw;
     border-radius: 13px;
     box-shadow: 0 0 3px black;

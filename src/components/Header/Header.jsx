@@ -1,11 +1,11 @@
-import styles from './Header.module.css'
-import {NavLink} from 'react-router-dom'
-import HeaderButton from '../UI/HeaderButton/index';
-import React from 'react'
-
+import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
+import HeaderButton from "../UI/HeaderButton/index";
+import React from "react";
 
 const Header = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
+    const user = true;
     React.useEffect(() => {
         function handleResize() {
             setWidth(window.innerWidth);
@@ -32,18 +32,26 @@ const Header = () => {
                             <NavLink className="mr-5 ml-5" to={"/folders"}>
                                 <HeaderButton text="Dictionary" />
                             </NavLink>
-                            <NavLink className="mr-5 ml-5" to={"/login"}>
-                                <HeaderButton text="Log-in" />
-                            </NavLink>
                         </nav>
                     ) : (
                         ""
                     )}
                 </div>
 
-                <button>
-                    <div className="h-[45px] w-[45px] bg-white rounded-full"></div>
-                </button>
+                {user ? (
+                    <button>
+                        <div className="h-[45px] w-[45px] bg-white rounded-full"></div>
+                    </button>
+                ) : (
+                    <div>
+                        <NavLink className="mr-5 ml-5" to={"/login"}>
+                            <HeaderButton text="Log-in" />
+                        </NavLink>
+                        <NavLink className="mr-5 ml-5" to={"/register"}>
+                            <HeaderButton text="Sign-in" />
+                        </NavLink>
+                    </div>
+                )}
             </div>
         );
     } else {
