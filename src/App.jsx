@@ -13,8 +13,7 @@ import NotFound from "./pages/NotFound/index";
 import Register from "./pages/Register";
 import Login from "./pages/Login/index";
 import About from "./pages/About/index";
-import { AuthProvider } from "./context/AuthContext";
-import AuthContext from "./context/AuthContext";
+import AuthContext from "./contexts/Auth";
 import { useContext } from "react";
 
 const ProtectedRoute = ({ user }) => {
@@ -26,7 +25,8 @@ const ProtectedRoute = ({ user }) => {
 // TODO: Create m-header tap effect and focus on current page button
 
 function App() {
-    const user = true;
+    const user = useContext(AuthContext);
+    
     return (
         <BrowserRouter>
             <Routes>

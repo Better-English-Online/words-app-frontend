@@ -1,6 +1,6 @@
 import Page from "../../components/Page/index";
 import { useContext } from "react";
-import AuthContext from "../../context/AuthContext";
+import AuthContext from "../../contexts/Auth";
 
 const Home = () => {
     const { user } = useContext(AuthContext);

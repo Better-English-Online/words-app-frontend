@@ -3,18 +3,16 @@ import SubmitButton from "../UI/SubmitButton/index";
 import Input from "../UI/Input/index";
 import PasswordInput from "../UI/PasswordInput/index";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
-import { useContext } from "react";
-import AuthContext from "../../context/AuthContext";
 import login from "../../api/login";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
-    const { loginUser } = useContext(AuthContext);
     let navigate = useNavigate();
     const onSuccess = (data) => {
-        localStorage.setItem("authTokens", JSON.stringify(data));
+        localStorage.setItem('tokens', JSON.stringify(data));
         navigate("/home");
+        // FIXME: Fix navigate after login user in
+        window.location.reload(false);
     };
 
     const onFailure = () => console.log("Failure");

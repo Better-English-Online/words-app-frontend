@@ -1,14 +1,16 @@
 import { NavLink, Link } from "react-router-dom";
 import HeaderButton from "../../UI/HeaderButton/index";
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import { rippleOnClick } from "../../../Utils";
 import Tabs from "../../Tabs";
 import { useNavigate } from "react-router-dom";
+import AuthContext from '../../../contexts/Auth';
 
 const PCHeader = () => {
     const [index, setIndex] = useState(null);
     const header = useRef(null);
-    const user = true;
+    const user = useContext(AuthContext);
+
     let navigate = useNavigate();
     return (
         <div
