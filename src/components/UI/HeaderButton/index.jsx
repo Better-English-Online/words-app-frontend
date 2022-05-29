@@ -1,7 +1,15 @@
-import styles from "./index.module.css";
+import "./index.css";
 
-const HeaderButton = ({ text }) => {
-    return <div className={styles["header-btn"]}>{text}</div>;
+const HeaderButton = ({ text, width, height, onClick, className }) => {
+    return (
+        <button
+            onClick={onClick}
+            style={{ padding: "5px 10px", width: width, height: height }}
+            className={"header-btn text-center" + " " + className}
+        >
+            {text}
+        </button>
+    );
 };
 
 export default HeaderButton;

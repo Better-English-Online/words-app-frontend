@@ -1,4 +1,8 @@
-const BackArrow = ({fill='white', height='35px', hoverFill='white'}) => {
+const BackArrow = ({
+    fill = "white",
+    height = "35px",
+    hoverFill = "white",
+}) => {
     return (
         <svg
             fill={fill}
@@ -47,6 +51,6 @@ const BackArrow = ({fill='white', height='35px', hoverFill='white'}) => {
             <g></g>
         </svg>
     );
-}
+};
 
-export default BackArrow
+export default BackArrow;

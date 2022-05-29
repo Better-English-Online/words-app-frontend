@@ -19,9 +19,15 @@
     width: 90%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
     .container {
-        width: 100%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 97%;
     }
 }
 

@@ -1,13 +1,21 @@
 import LoginForm from "../../components/LoginForm/index";
-import { NavLink } from 'react-router-dom';
-import BackArrow from '../../components/UI/Svgs/BackArrow';
+import { NavLink } from "react-router-dom";
+import BackArrow from "../../components/UI/Svgs/BackArrow";
+import { useWidth } from "../../Utils";
+import { useState } from "react";
 
 const Login = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    useWidth(setWidth);
     return (
-        <div className="flex h-[100vh] justify-center items-center">
-            <NavLink className="absolute top-10 left-14 p-5 -m-5" to="/">
-                <BackArrow fill="grey"/>
-            </NavLink>
+        <div className="p-3 flex h-[100vh] justify-center items-center">
+            {width > 1000 ? (
+                <NavLink className="absolute top-10 left-14 p-5 -m-5" to="/">
+                    <BackArrow fill="grey" />
+                </NavLink>
+            ) : (
+                ""
+            )}
             <LoginForm />
         </div>
     );

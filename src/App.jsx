@@ -13,10 +13,17 @@ import NotFound from "./pages/NotFound/index";
 import Register from "./pages/Register";
 import Login from "./pages/Login/index";
 import About from "./pages/About/index";
+import { AuthProvider } from "./context/AuthContext";
+import AuthContext from "./context/AuthContext";
+import { useContext } from "react";
 
 const ProtectedRoute = ({ user }) => {
     return user ? <Outlet /> : <Navigate to="/" />;
 };
+
+// !: set authProvider and privateRoute
+// !: Dynamically change components when user loggen-in or no
+// TODO: Create m-header tap effect and focus on current page button
 
 function App() {
     const user = true;
@@ -36,6 +43,7 @@ function App() {
                     path="/register"
                     element={user ? <NotFound /> : <Register />}
                 />
+
                 <Route element={<ProtectedRoute user={user} />}>
                     <Route exact path="/" element={<Navigate to="/home" />} />
                     <Route path="/home" element={<Home />} />
