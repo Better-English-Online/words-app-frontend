@@ -29,7 +29,7 @@ const PCHeader = () => {
                         className="inline mr-20"
                     >
                         <HeaderButton
-                            className="tab m5-3 mr-5"
+                            className="tab ml-5 mr-5"
                             onClick={() => navigate("/home")}
                             padding="6px 15px"
                             text="Home"
@@ -55,10 +55,12 @@ const PCHeader = () => {
             ) : (
                 <div>
                     <HeaderButton
+                        className='ml-5 mr-5'
                         onClick={() => navigate("/login")}
                         text="Log-in"
                     />
                     <HeaderButton
+                        className='ml-5 mr-5'
                         onClick={() => navigate("/register")}
                         text="Sign-in"
                     />

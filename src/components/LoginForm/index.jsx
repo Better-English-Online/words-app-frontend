@@ -19,9 +19,9 @@ const LoginForm = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        const username = e.target.email.value;
+        const email = e.target.email.value;
         const password = e.target.password.value;
-        login({ username, password, onSuccess, onFailure });
+        login({ email, password, onSuccess, onFailure });
     };
     return (
         <div className={styles.container}>

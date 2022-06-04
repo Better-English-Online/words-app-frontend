@@ -6,11 +6,13 @@ import { rippleOnClick } from "../../../Utils";
 import SignUp from "../../UI/Svgs/SignUp";
 import LogIn from "../../UI/Svgs/LogIn";
 import Tabs from "../../Tabs";
+import { useContext } from "react";
+import AuthContext from '../../../contexts/Auth';
 
-const MHeader = () => {
+const MobileHeader = () => {
     const [index, setIndex] = useState(null);
     const header = useRef(null);
-    const user = true;
+    const user = useContext(AuthContext);
     return (
         <>
             {user ? (
@@ -49,4 +51,4 @@ const MHeader = () => {
     );
 };
 
-export default MHeader;
+export default MobileHeader;
