@@ -23,3 +23,9 @@
 .container {
     position: relative;
 }
+
+@media (hover: none) {
+    .passInput:hover {
+        box-shadow: none;
+    }
+}

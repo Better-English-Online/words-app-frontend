@@ -1,13 +1,13 @@
 import { createContext, useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
 
-import { check } from '../../api/token';
+import { check } from "../../api/token";
 
 const Context = createContext();
 
 const Provider = ({ children }) => {
     const [data, setData] = useState(null);
-    const tokens = JSON.parse(localStorage.getItem('tokens'));
+    const tokens = JSON.parse(localStorage.getItem("tokens"));
     const accessToken = tokens?.access;
 
     const onSuccess = () => {
@@ -15,22 +15,15 @@ const Provider = ({ children }) => {
         setData(decoded);
     };
 
-    const onFailure = (
-        // Add refresh logic here
-    ) => {};
+    const onFailure = () => null;
 
     useEffect(() => {
         if (!accessToken) return;
 
-        check({ token: accessToken,  onSuccess, onFailure });
-    }, [])
-    
+        check({ token: accessToken, onSuccess, onFailure });
+    }, []);
 
-    return (
-        <Context.Provider value={data}>
-            {children}
-        </Context.Provider>
-    );
+    return <Context.Provider value={data}>{children}</Context.Provider>;
 };
 
 export default Context;

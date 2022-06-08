@@ -105,7 +105,7 @@ section {
 body {
     line-height: 1;
     font-family: Arial;
-    background: #1f1f1f;
+    background: radial-gradient(#1f1f1f, rgb(29, 29, 29));
 }
 ol,
 ul {

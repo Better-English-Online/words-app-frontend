@@ -32,3 +32,9 @@
 .submit-btn:hover:before {
     width: 100%;
 }
+
+@media (hover: none) {
+    .submit-btn:before {
+        width: 100%;
+    }
+}

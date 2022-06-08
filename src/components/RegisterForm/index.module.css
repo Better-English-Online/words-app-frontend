@@ -3,11 +3,12 @@
     width: 30vw;
     border-radius: 13px;
     box-shadow: 0 0 3px black;
-    padding: 30px 10px 15px 10px;
+    padding: 30px 10px 30px 10px;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .AuthForm {
@@ -28,6 +29,10 @@
 @media screen and (max-width: 500px) {
     .container {
         width: 97%;
+        padding: 30px 5px 30px 5px;
+    }
+    .AuthForm{
+        width: 95%;
     }
 }
 
@@ -39,4 +44,8 @@
 
 .inputs > * {
     margin-bottom: 20px;
+}
+
+p {
+    color: rgb(255, 96, 96);
 }

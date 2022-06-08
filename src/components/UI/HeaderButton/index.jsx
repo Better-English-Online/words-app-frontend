@@ -1,11 +1,11 @@
 import "./index.css";
 
-const HeaderButton = ({ text, width, height, onClick, className }) => {
+const HeaderButton = ({ text, width, height, className, ...props }) => {
     return (
         <button
-            onClick={onClick}
+            {...props}
             style={{ padding: "5px 10px", width: width, height: height }}
-            className={"header-btn text-center" + " " + className}
+            className={`header-btn text-center ${className}`}
         >
             {text}
         </button>

@@ -1,12 +1,9 @@
-import { tabsChildrenPropsInjector } from "../../Utils/index";
+import { TabsChildrenPropsInjector } from "../../Utils/index";
 import { useState } from "react";
 
-const Tabs = ({ innerRef, children, indexState, setIndexState, ...props }) => {
-    const tabsChildren = tabsChildrenPropsInjector(
-        children,
-        indexState,
-        setIndexState
-    );
+const Tabs = ({ innerRef, children, ...props }) => {
+    const [index, setIndex] = useState(null);
+    const tabsChildren = TabsChildrenPropsInjector(children, index, setIndex);
 
     return (
         <div ref={innerRef} {...props}>

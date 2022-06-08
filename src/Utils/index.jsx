@@ -13,17 +13,17 @@ const useWidth = (setWidth) => {
     });
 };
 
-const tabsChildrenPropsInjector = (children, indexState, setIndexState) => {
+const TabsChildrenPropsInjector = (children, indexState, setIndexState) => {
     const NewChildren = () =>
         children.map((child, elementIndex) =>
             cloneElement(child, {
-                onClick: (e) => {
-                    child.props.onClick(e);
+                onClick: () => {
                     setIndexState(elementIndex);
                 },
                 className: `${child.props.className} ${
                     indexState === elementIndex ? "active" : ""
                 }`,
+                key: elementIndex,
             })
         );
     return <NewChildren />;
@@ -56,7 +56,7 @@ const rippleOnClick = (e, element) => {
 };
 export {
     useWidth,
-    tabsChildrenPropsInjector,
+    TabsChildrenPropsInjector,
     findClickCoordinates,
     rippleOnClick,
 };

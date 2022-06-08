@@ -1,9 +1,10 @@
-const Dict = ({ height, fill }) => {
+const Dict = ({ height, fill, ...props }) => {
     return (
         <svg
             height={height}
             fill={fill}
             id="Layer_1"
+            {...props}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
         >

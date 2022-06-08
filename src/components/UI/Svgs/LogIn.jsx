@@ -1,18 +1,15 @@
-const LogIn = ({ fill, height }) => {
+const LogIn = ({ fill, height, ...props }) => {
     return (
         <svg
-            height={height}
-            viewBox="0 0 24 24"
+            viewBox="0 0 35 35"
+            data-name="Layer 2"
+            id="a5b81eaf-55c4-41bd-86f3-06b0f5373971"
             xmlns="http://www.w3.org/2000/svg"
-            stroke={fill}
-            strokeWidth="2.3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            fill="none"
+            {...props}
         >
-            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-            <polyline points="10 17 15 12 10 7"></polyline>
-            <line x1="15" y1="12" x2="3" y2="12"></line>
+            <path d="M17.052,34.75a1.25,1.25,0,0,1,0-2.5,14.75,14.75,0,0,0,0-29.5,1.25,1.25,0,0,1,0-2.5,17.25,17.25,0,0,1,0,34.5Z" />
+            <path d="M19.626,18.75H1.947a1.25,1.25,0,1,1,0-2.5H19.626a1.25,1.25,0,1,1,0,2.5Z" />
+            <path d="M13.234,26.438A1.25,1.25,0,0,1,12.35,24.3l6.384-6.385a.593.593,0,0,0,0-.839L12.35,10.7a1.25,1.25,0,1,1,1.767-1.768L20.5,15.313a3.1,3.1,0,0,1,0,4.374l-6.385,6.385A1.246,1.246,0,0,1,13.234,26.438Z" />
         </svg>
     );
 };

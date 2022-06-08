@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import { useState } from "react";
 
-const PasswordInput = ({ placeholder, name }) => {
+const PasswordInput = ({ placeholder, name, ...props }) => {
     const [showPassword, setShowPassword] = useState(false);
 
     const showPasswordIcoStyle = {
@@ -68,6 +68,7 @@ const PasswordInput = ({ placeholder, name }) => {
                 type={setPasswordInputType()}
                 placeholder={placeholder}
                 name={name}
+                {...props}
             />
             {setShowPasswordIcon()}
         </div>

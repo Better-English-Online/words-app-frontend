@@ -1,0 +1,17 @@
+.warning{
+    background: rgb(255, 13, 0) ;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+
+.warning:hover{
+    background: rgb(220, 11, 0);
+}
+
+.warning.active{
+    opacity: 1;
+}

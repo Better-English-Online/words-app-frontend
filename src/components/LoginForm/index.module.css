@@ -4,8 +4,9 @@
     width: 30vw;
     border-radius: 13px;
     box-shadow: 0 0 3px black;
-    padding: 30px 10px 15px 10px;
+    padding: 30px 10px 30px 10px;
     text-align: center;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -30,6 +31,9 @@
     .container {
         width: 97%;
     }
+    .AuthForm {
+        width: 95%;
+    }
 }
 
 .form-title {
@@ -41,3 +45,5 @@
 .inputs > * {
     margin-bottom: 20px;
 }
+
+

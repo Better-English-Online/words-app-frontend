@@ -1,13 +1,12 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HeaderButton from "../../UI/HeaderButton/index";
-import { useRef, useState, useContext } from "react";
+import { useRef, useContext } from "react";
 import { rippleOnClick } from "../../../Utils";
 import Tabs from "../../Tabs";
 import { useNavigate } from "react-router-dom";
-import AuthContext from '../../../contexts/Auth';
+import AuthContext from "../../../contexts/Auth";
 
 const PCHeader = () => {
-    const [index, setIndex] = useState(null);
     const header = useRef(null);
     const user = useContext(AuthContext);
 
@@ -23,25 +22,21 @@ const PCHeader = () => {
                     Words-App
                 </NavLink>
                 {user ? (
-                    <Tabs
-                        indexState={index}
-                        setIndexState={setIndex}
-                        className="inline mr-20"
-                    >
-                        <HeaderButton
-                            className="tab ml-5 mr-5"
-                            onClick={() => navigate("/home")}
-                            padding="6px 15px"
-                            text="Home"
-                        />
-                        <HeaderButton
-                            className="tab ml-5 mr-5"
-                            padding="6px 15px"
-                            onClick={() => {
-                                navigate("/folders");
-                            }}
-                            text="Dictionary"
-                        />
+                    <Tabs className="inline mr-20">
+                        <NavLink to="/home" className="tab ml-5 mr-5">
+                            <HeaderButton
+                                padding="6px 15px"
+                                text="Home"
+                                className="header-btn"
+                            />
+                        </NavLink>
+                        <NavLink to="/folders" className="tab ml-5 mr-5">
+                            <HeaderButton
+                                padding="6px 15px"
+                                text="Dictionary"
+                                className="header-btn"
+                            />
+                        </NavLink>
                     </Tabs>
                 ) : (
                     ""
@@ -55,12 +50,12 @@ const PCHeader = () => {
             ) : (
                 <div>
                     <HeaderButton
-                        className='ml-5 mr-5'
+                        className="ml-5 mr-5"
                         onClick={() => navigate("/login")}
                         text="Log-in"
                     />
                     <HeaderButton
-                        className='ml-5 mr-5'
+                        className="ml-5 mr-5"
                         onClick={() => navigate("/register")}
                         text="Sign-in"
                     />

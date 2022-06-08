@@ -20,13 +20,10 @@ const ProtectedRoute = ({ user }) => {
     return user ? <Outlet /> : <Navigate to="/" />;
 };
 
-// !: set authProvider and privateRoute
-// !: Dynamically change components when user loggen-in or no
-// TODO: Create m-header tap effect and focus on current page button
+// TODO: set login and register onFailure behavior
 
 function App() {
     const user = useContext(AuthContext);
-    
     return (
         <BrowserRouter>
             <Routes>
